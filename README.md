@@ -8,7 +8,7 @@ Explanation on how I set up this monorepo is at [monorepo_guide.md](monorepo_gui
 
 ## Backend
 
-GraphQL implementation **Apollo Server** running in **Node.js**.
+GraphQL backend as **Apollo Server**'s **Express** implementation running in **Node.js**.
 
 ## Frontend
 
