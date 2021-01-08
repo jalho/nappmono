@@ -48,8 +48,10 @@
     │       ...                 # modules are here in root dir
     │
     └───packages
+        │
         ├───backend
         │       ...             # empty dir for now
+        │
         └───frontend
             │   .gitignore
             │   package.json
