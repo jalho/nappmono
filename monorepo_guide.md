@@ -71,3 +71,13 @@
                     ...
     ```
     </details>
+
+6.
+    Initialize backend under `packages/backend/`:
+        
+        $ yarn init -y
+
+    I also edited this one to be `"private": true` too since the root and frontend are as well.
+
+7.
+    Create `index.js` under `packages/backend/`. Implement [Apollo Server](https://www.apollographql.com/docs/apollo-server).

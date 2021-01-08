@@ -20,12 +20,9 @@
   "eslintConfig": {
     "extends": [
       "react-app",
-      "react-app/jest"
-    ],
-    "rules": {
-      "eol-last": "warn",
-      "quotes": ["warn", "double"]
-    }
+      "react-app/jest",
+      "../../package.json"
+    ]
   },
   "browserslist": {
     "production": [

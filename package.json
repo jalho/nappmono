@@ -3,5 +3,17 @@
   "version": "1.0.0",
   "license": "MIT",
   "private": true,
-  "workspaces": ["packages/*"]
+  "workspaces": ["packages/*"],
+  "eslintConfig": {
+    "rules": {
+      "eol-last": "warn",
+      "quotes": ["warn", "double"],
+      "semi": "warn",
+      "max-len": ["warn", { "code": 80 }],
+      "object-curly-spacing": ["warn", "always"],
+      "sort-keys": "warn",
+      "sort-imports": "warn",
+      "comma-dangle": ["warn", "never"]
+    }
+  }
 }
