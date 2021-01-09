@@ -1,5 +1,6 @@
 import { graphiqlExpress, graphqlExpress } from "apollo-server-express";
 import bodyParser from "body-parser";
+import cors from "cors";
 import express from "express";
 import fs from "fs";
 import { gql } from "apollo-server";
