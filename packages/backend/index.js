@@ -55,6 +55,9 @@ app.use("/graphql", bodyParser.json(), graphqlExpress({ schema }));
 // visual endpoint
 app.use("/graphiql", graphiqlExpress({ endpointURL: "/graphql" }));
 
+// React app
+app.use(express.static("../frontend/build"));
+
 const PORT = process.env.PORT || 4000; // 4000 in development environment
 app.listen(PORT, () => {
   console.log(`Server listening at port ${PORT}.`);

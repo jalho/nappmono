@@ -16,5 +16,8 @@
       "comma-dangle": ["warn", "never"],
       "no-unused-vars": "warn"
     }
+  },
+  "scripts": {
+    "deploy": "cd packages/frontend && yarn build && cd ../backend && node index.js"
   }
 }
