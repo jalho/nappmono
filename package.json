@@ -13,7 +13,8 @@
       "object-curly-spacing": ["warn", "always"],
       "sort-keys": "warn",
       "sort-imports": "warn",
-      "comma-dangle": ["warn", "never"]
+      "comma-dangle": ["warn", "never"],
+      "no-unused-vars": "warn"
     }
   }
 }
