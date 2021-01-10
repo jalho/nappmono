@@ -18,8 +18,7 @@
   },
   "scripts": {
     "start": "node index.js",
-    "start:dev": "nodemon",
-    "deploy": "cd ../frontend && yarn build:ui && cd ../backend && yarn start"
+    "start:dev": "nodemon"
   },
   "type": "module",
   "devDependencies": {

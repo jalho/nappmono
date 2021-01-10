@@ -18,6 +18,6 @@
     }
   },
   "scripts": {
-    "deploy": "cd packages/frontend && yarn build && cd ../backend && node index.js"
+    "deploy": "cd packages/frontend && yarn build --prod && cd ../backend && yarn start"
   }
 }
