@@ -18,6 +18,6 @@
     }
   },
   "scripts": {
-    "start": "cd packages/frontend && yarn build --prod && cd ../backend && yarn install && yarn start"
+    "start": "cd packages/backend && yarn install && yarn start"
   }
 }
