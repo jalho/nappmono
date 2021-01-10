@@ -6,6 +6,36 @@ Full stack web dev project. Repository contains backend and frontend for a web a
 
 Explanation on how I set up this monorepo is at [monorepo_guide.md](monorepo_guide.md).
 
+## Scripts
+
+Script names in [`package.json`](package.json) are verbose because Heroku would unintendedly [automatically run](https://devcenter.heroku.com/changelog-items/1557) a script named just *build*.
+
+### Starting the development environment
+
+* **Server (backend)**
+
+        cd packages/backend
+        yarn start:dev
+
+  *Starts the server at `localhost:4000`, providing visual endpoint at `/graphiql` and request endpoint at `/graphql`.*
+
+* **Client (frontend)**
+
+        cd packages/frontend
+        yarn start
+  
+  *Starts the default *Create React App* development server at `localhost:3000` and opens it in a browser.*
+
+### Deploying on Heroku
+
+1. Prepare the repository for deploying:
+
+        npm run prepareForDeploy
+
+    *Removes old `build` directories from frontend and backend, builds a new one in frontend and copies it to `backend/build/`*.
+
+2. Commit and push changes. The app is published at [nappmono.herokuapp.com](https://nappmono.herokuapp.com/). If there has been no traffic for 30 minutes, there will be a short delay (~ 15 seconds) until the app is accessible.
+
 ## Backend
 
 GraphQL backend as **Apollo Server**'s **Express** implementation running in **Node.js**.

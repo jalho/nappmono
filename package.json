@@ -18,7 +18,10 @@
     }
   },
   "scripts": {
-    "start": "cd packages/backend && yarn start"
+    "start": "cd packages/backend && yarn start",
+    "cleanOldBuilds": "npx rimraf packages/frontend/build & npx rimraf packages/backend/build",
+    "buildFrontAndMoveToBack": "cd packages/frontend && yarn build:ui && npx move-cli build ../backend/build && cd ..",
+    "prepareForDeploy": "npm run cleanOldBuilds && npm run buildFrontAndMoveToBack"
   },
   "engines": {
     "node": "14.x"
