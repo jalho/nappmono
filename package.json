@@ -19,5 +19,8 @@
   },
   "scripts": {
     "start": "cd packages/backend && yarn install && yarn start"
+  },
+  "engines": {
+    "node": "14.x"
   }
 }
