@@ -55,8 +55,8 @@ app.use("/graphql", bodyParser.json(), graphqlExpress({ schema }));
 // visual endpoint
 app.use("/graphiql", graphiqlExpress({ endpointURL: "/graphql" }));
 
-// React app build needs to be copied from frontend/build to backend/build
-app.use(express.static("build"));
+// React app build copied from ../frontend
+app.use(express.static("ui_prod_build"));
 
 const PORT = process.env.PORT || 4000; // 4000 in development environment
 app.listen(PORT, () => {

@@ -19,8 +19,8 @@
   },
   "scripts": {
     "start": "cd packages/backend && yarn start",
-    "cleanOldBuilds": "npx rimraf packages/frontend/build & npx rimraf packages/backend/build",
-    "buildFrontAndMoveToBack": "cd packages/frontend && yarn build:ui && npx move-cli build ../backend/build && cd ..",
+    "cleanOldBuilds": "npx rimraf packages/frontend/build & npx rimraf packages/backend/ui_prod_build",
+    "buildFrontAndMoveToBack": "cd packages/frontend && yarn build:ui && npx move-cli build ../backend/ui_prod_build && cd ..",
     "prepareForDeploy": "npm run cleanOldBuilds && npm run buildFrontAndMoveToBack"
   },
   "engines": {
