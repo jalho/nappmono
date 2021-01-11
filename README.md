@@ -46,4 +46,4 @@ GraphQL backend as **Apollo Server**'s **Express** implementation running in **N
 
 ## Motivation
 
-Coding challenge and practise. No practical use cases.
+Coding challenge and practise. No practical use cases. Challenge instructions [here](https://github.com/solita/dev-academy-2021) (accessed 11 Jan 2021).
