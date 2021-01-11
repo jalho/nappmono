@@ -1,3 +1,4 @@
+import "./index.scss";
 import { ApolloClient, InMemoryCache, createHttpLink } from "@apollo/client";
 import React, { useState } from "react";
 import { ApolloProvider } from "@apollo/client";
@@ -51,18 +52,16 @@ const App = () => {
   const sortedData = data && sortArrBy(data.allNames.slice(), sortBy);
   
   return (
-    <div>
+    <div className="centered dark">
       <h2>nappmono</h2>
       <p>
-        <i>
-          Name App Monorepo.
-          Source: <a href="https://github.com/jalho/nappmono">GitHub</a>.
-        </i>
+        Name App Monorepo.
+        Source on <a href="https://github.com/jalho/nappmono">GitHub</a>.
       </p>
       {loading && <p>Loading...</p>}
       {error && <p>Error!</p>}
       {sortedData &&
-        <div>
+        <div className="centered">
           <button onClick={() => setSortBy(diffProp)}>
             {`Sort by ${diffProp}`}
           </button>
