@@ -30,7 +30,7 @@ Script names in [`package.json`](package.json) are verbose because Heroku would 
 
         npm run prepareForDeploy
 
-    *Removes old `build` directories from frontend and backend, builds a new one in frontend and copies it to `backend/build/`*.
+    *Removes old UI builds from frontend and backend, builds a new one in frontend and copies it to `backend/ui_prod_build/`*.
 
 2. Commit and push changes. The app is published at [nappmono.herokuapp.com](https://nappmono.herokuapp.com/). If there has been no traffic for 30 minutes, there will be a short delay (~ 15 seconds) until the app is accessible.
 
